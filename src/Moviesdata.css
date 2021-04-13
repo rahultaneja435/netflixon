@@ -1,0 +1,39 @@
+.images
+{
+    object-fit: contain;
+    width: 100%;
+    max-height: 100px;
+    transition: transform 450ms;
+    margin-right: 10px ;
+}
+.movie_header
+{
+    margin-left: 20px;
+}
+.images:hover
+{
+    transform: scale(1.08);
+                        /*when overing over the image*/
+}
+
+.images1:hover
+{
+    transform: scale(1.09);
+                        /*when overing over the image*/
+}
+.images1
+{
+    max-height: 250px;
+}
+
+.movie_container
+{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.movie_container::-webkit-scrollbar {
+ display: none;
+}
