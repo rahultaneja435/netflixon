@@ -1,0 +1,29 @@
+.nav
+{
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: top;
+
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
+.imager
+{
+    position: fixed;
+    width: 80px;
+    object-fit: contain;
+    left: 0;
+}
+
+.profile
+{
+    position: fixed;
+    width: 30px;
+    right: 20px;
+    object-fit: contain;
+}

@@ -1,6 +1,7 @@
 import './App.css';
 import Banner from './Banner';
 import Moviedata from './Moviedata'
+import Navbar from './Navbar';
 import requests from './request'
 
 
@@ -8,12 +9,17 @@ import requests from './request'
 
 function App() {
   return (
-    <div className="App" style={{backgroundColor:"black"}}>
+    <div className="App" style={{backgroundColor:"#111"}}>
+    <Navbar/>
     <Banner/>
-    <Moviedata title="Netflix Originals" fetchUrl={requests.fetchNetflixOriginals} isLargeRow/>
+    <Moviedata title="Netflix Originals" 
+    fetchUrl={requests.fetchNetflixOriginals} 
+    isLargeRow/>
     <Moviedata title="Trending Now" fetchUrl={requests.fetchTrending}/>
     <Moviedata title="Action Movies" fetchUrl={requests.fetchActionmovies}/>
     <Moviedata title="Horror Movies" fetchUrl={requests.fetchHorrormovies}/>
+    <Moviedata title="Romantic Movies" fetchUrl={requests.fetchRomancemovies}/>
+    <Moviedata title="Documentaries" fetchUrl={requests.fetchdocumentaries}/>
     </div>
   );
 }
